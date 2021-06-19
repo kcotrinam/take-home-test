@@ -5,11 +5,11 @@ export const fetchHistoryAction = () => ({
 })
 
 export const fetchHistoryActionSuccess = (data) => ({
-  tyupe: types.FETCH_HISTORY_SUCESS,
+  type: types.FETCH_HISTORY_SUCESS,
   payload: data
 })
 
 export const fetchHistoryActionFailure = (data) => ({
-  tyupe: types.FETCH_HISTORY_FAILURE,
+  type: types.FETCH_HISTORY_FAILURE,
   payload: data
 })
