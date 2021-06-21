@@ -15,13 +15,24 @@ import { formatDistanceToNow } from 'date-fns'
 const Timeline = () => {
   const dispatch = useDispatch()
   const { history } = useSelector((state) => state.history)
+  const filter = useSelector((state) => state.filter)
 
   useEffect(() => {
     dispatch(requestHistory())
   }, [dispatch])
 
+  const filteredHistory = () => {
+    if (filter > 0)
+      return history.filter((hist) =>
+        formatDistanceToNow(new Date(hist.commit.committer.date)).includes(
+          `${filter} day` || `${filter} days`
+        )
+      )
+    return history
+  }
+
   const displayTimelinCards = () => {
-    return history.map((elm) => (
+    return filteredHistory().map((elm) => (
       <TimelineCard
         key={elm.sha}
         msg={elm.commit.message}
