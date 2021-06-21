@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# MTake Home Test (THT)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This is an application where the user will be able to see the commits history of an specific repository
 
-## Available Scripts
+![screenshot](./docs/screenshot.png)
 
-In the project directory, you can run:
+## :hammer: Built with
 
-### `yarn start`
+- React
+- Redux
+- chakra-UI
+- JavaScript
+- Standard
+- Node.js
+- Express.js
+- VS code
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To get a local copy up and running follow these simple steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Go to the [repository page](https://github.com/kcotrinam/take-home-test).
+2. Press the "Code" button and copy the link.
+3. Clone it using git command `git clone <link>`.
 
-### `yarn test`
+## :construction_worker: How to use?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Move to the folder: `cd take-home-test`.
+2. run `npm install`.
+3. on your command line run: `npm run dev`.
+4. You will see all the commits made for the project.
+5. Add a number in the filter input to show specific commits.
 
-### `yarn build`
+## :bust_in_silhouette: Author
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+👤 **Kevin Cotrina**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- GitHub: [kcotrinam](https://github.com/kcotrinam)
+- Twitter: [@kcotrinam_dev](https://twitter.com/kcotrinam_dev)
+- LinkedIn: [KevinCotrina](https://www.linkedin.com/in/kevincotrina/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🤝 :raised_hand: :raised_hand: Contributions
 
-### `yarn eject`
+Contributions, issues, and feature requests are welcome!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Feel free to check the [issues page](https://github.com/kcotrinam/take-home-test/issues).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :muscle: Show your support
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Give a ⭐️ if you like this project!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## :grey_exclamation: Acknowledgment
 
-## Learn More
+- [Fulltimeforce ](https://fulltimeforce.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📝 License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](LICENSE) licensed.
