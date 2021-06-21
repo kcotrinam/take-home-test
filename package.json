@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "concurrently": "^6.2.0",
     "cors": "^2.8.5",
     "date-fns": "^2.22.1",
     "express": "^4.17.1",
@@ -27,6 +28,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "dev": "concurrently --kill-others \"npm run server\" \"npm start\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "server": "nodemon ./server/server.js",
@@ -50,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
