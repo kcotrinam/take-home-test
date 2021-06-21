@@ -9,6 +9,8 @@ import {
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import { Box } from '@chakra-ui/react'
+import { AiFillStar } from 'react-icons/ai'
+import { formatDistanceToNow } from 'date-fns'
 
 const Timeline = () => {
   const dispatch = useDispatch()
@@ -24,7 +26,9 @@ const Timeline = () => {
         key={elm.sha}
         msg={elm.commit.message}
         author={elm.commit.committer.name}
-        date={elm.commit.committer.date}
+        date={formatDistanceToNow(new Date(elm.commit.committer.date), {
+          addSuffix: true
+        })}
       />
     ))
   }
@@ -36,7 +40,7 @@ const Timeline = () => {
           {displayTimelinCards()}
           <VerticalTimelineElement
             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-            // icon={<StarIcon />}
+            icon={<AiFillStar />}
           />
         </VerticalTimeline>
       </Box>
