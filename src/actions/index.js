@@ -1,5 +1,6 @@
 import fetchHistory from '../services/fetchHistory'
 import * as actions from './actions'
+import * as types from './actionTypes'
 
 const requestHistory = () => async (dispatch) => {
   dispatch(actions.fetchHistoryAction)
@@ -12,5 +13,10 @@ const requestHistory = () => async (dispatch) => {
     dispatch(actions.fetchHistoryActionFailure(error))
   }
 }
+
+export const updateFilter = (days) => ({
+  type: types.UPDATE_FILTER,
+  payload: days
+})
 
 export default requestHistory
